@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单元素 enctype是提交属性 不加提交不成功 
+        一定要加name 用于服务端接收数据时了解是哪个元素发的 -->
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="myfile" />
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
